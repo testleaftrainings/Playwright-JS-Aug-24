@@ -1,0 +1,66 @@
+Agenda (17/08/2024-Saturday)
+----------------------------
+9.00AM  to 10.00AM   -Welcome and Kick Start
+10.00AM to 10.30AM   -JS Introduction
+10.30AM to 10.40AM   -Break
+10.40AM to 11.30AM   -Primitive Datatype and variables
+11.30AM to 11.45AM   -Breakout
+11.45AM to 12.30PM   -let vs var vs const
+12.30PM to 12.50PM   -Operators & conditional statement
+12.50Pm to 1.00PM    -Wrap up
+
+
+Javascript
+---------
+ web design -->front end development
+  -->scripting language
+  -->back end development ->node.js  --> execution environment 
+
+ javascript features
+   client and server validation
+   dynamic typing -->not recommended 
+   event driven architure
+   asynchronous programming
+   cross -platform
+
+
+   variables
+    var ,let and const
+
+    var -->redeclared and reassigned
+
+use up arrow to get the previous commmands
+
+Primitive and non primitive
+
+
+Primitive type of data
+string  --> "" / ''/``
+number 
+boolean
+undefined
+null  - not recommend  -->object
+
+
+
+let  -->all primitive type 
+var and let 
+
+redeclaration
+hoisting
+scope
+
+
+const -->final value -->cannot change the vlaue assigned once to the variable
+
+
+
+
+
+
+
+control statements ->if switch with operators/ for loop /while 
+
+Non primitive 
+Array
+String
