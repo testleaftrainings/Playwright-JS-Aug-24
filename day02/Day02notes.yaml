@@ -1,0 +1,64 @@
+Agenda:
+9.00AM  to 9.40AM   -Conditional Statements
+9.40AM  to 10.00AM  -classroom
+10.00AM to 10.40AM  -Loop Statements
+10.40AM to 11.00AM  -Breakout
+11.00AM to 11.15AM  -Break
+11.15AM to 12.00AM  -String
+12.00AM to 12.15PM  -Breakout
+12.15PM to 01.00PM  -Arrays
+01.00PM to 01.10PM  -Wrap &Assignments
+
+Operators:
+  arithmetic --> + - / * % - mod
+ 
+  / -->quotient
+  % -->remainder
+
+  logical operators - &&  ||
+  ++ , -- 
+  a=10;
+  a++ -->a=a+1   -->postIncrement
+  ++a -->preIncrement operator
+
+  a--  -->post decrement
+  --a  -->predecrement
+
+  comparision operator -return boolean
+   ==  
+   <
+   >
+   <=
+   >=
+   !=
+
+  strict equality  ===  check for datatype and value should be same
+  non strict equality  == check the equality of value alone 
+  -->return the boolean
+
+
+  30==40  -->value 
+  30 and 40 -->number and the value
+
+
+-Conditional:
+   loop Statements
+    repeating same logic again and again until the condition the satisfies
+    for 
+    while
+    do while
+
+syntax :
+  for(starting point,range of values, condition){}
+String: sequence of character
+ literal declaration
+  let username="Vidya"
+  let s1="Vidya"
+
+new Keyword:
+  let s2=new String("Vidya")
+  let s3= new String("Vidya")
+
+
+
+
