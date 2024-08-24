@@ -1,0 +1,87 @@
+Agenda:
+-----
+9.00AM to 9.50AM   -Function types
+9.50AM to 10.10AM  -Callback Function
+10.10AM to 11.00AM -Promise,Async and Await
+11.00AM to 11.15AM -Break
+11.15AM to 11.45AM -Playwright introduction 
+11.45AM to 12.10PM -Basic browser launch 
+12.10PM to 12.40PM -Undersatanding Dom & Basic locators(id & class)
+12.45PM to 1.05PM  -Classroom
+1.05PM  to 1.15PM  -Recap
+ 
+Function: -->Block of code which is built to have reusability of a logic 
+
+function userdetails(){
+
+}
+
+syntax of function
+
+Types of Function :
+
+1.Named Function/Function declaration
+--------------------------------------
+function fnName(parameters){
+ logic
+ return stmt
+}
+
+2.Function expression
+---------------------
+let variable=function(){  //anonymous function
+    logic
+    return
+}
+variable();
+
+3.IIF -Immediately invoked function -->will called Immediately once itis created
+--------------------------------------
+usually used by react devlopers 
+
+(function(){
+}) ();
+
+4.Arrow fuction:
+---------------
+ -->to write functions concisely 
+
+ let fnName =()=>{console.log("")
+        return 
+        }
+
+fnName()
+
+
+5.Asynchronous Function
+
+ 6.Callback function
+     Callinf one function into an another function
+  Login -->username   ->type in 
+           -->password  -->type in
+              -->login    -->login
+
+7.Promise --> resolve the issue with callback hell
+    pending state-->until the promise is resolved 
+    (fullfilled)resolve  --wait will applied until promise got resolved
+    reject
+
+8.async and await -->pair 
+
+Playwright -->web automation
+
+open the browser -->incognito mode -->isolated environment
+                -->headless mode -->UI is not visible
+Browser
+BrowserContext
+Page
+
+to run 
+npx playwright test filename.spec.ts
+
+3 level 
+Global 
+Project level -->
+Test level
+
+
