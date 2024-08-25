@@ -1,0 +1,112 @@
+Agenda:
+-----
+9.00AM  to 9.30AM  -Multiple BrowserContext & Page
+9.30AM  to 10.00AM -understanding Dom
+10.00AM to 10.30AM -Basic Locators(CSS)
+10.30AM to 10.50AM -Classroom
+10.50AM to 11.00AM -Break
+11.00AM to 11.45AM -Dropdown 
+11.45AM to 12.00PM -Classroom
+12.00PM to 12.30PM -Playwright Locators
+12.30PM to 1.00PM  -Xpath
+
+
+
+npm init playwright@latest -->initialize the playwright
+npx playwright test filename.spec.ts ->filename
+
+Testlevel -->high priority
+Projectlevel-->override the global
+globallevel-->for complete project folders
+
+
+Right click -->inspect -->open design/information about the webpage/webelements
+ctrl shift i -->pen the developtool
+3dots ->browser->moretools-->developertools
+
+HTML->DOM -->Document object model 
+<html> --> <>   tagname  -->type of element
+ <button> -->button element
+ <a> (anchor)-->link
+ <span> -->section into section
+ <div> -->dividing the page into different section
+<h2>
+
+
+<html>
+
+<div>
+
+</div>
+</html>
+
+username textbox
+
+<input class="inputLogin" type="text" id="username" name="USERNAME" size="50">
+
+Types of Locators:
+------------------
+1.css selectors
+2.Xpath 
+3.playwright locators
+
+
+Basic CSS selectors
+id --> #idValue
+class-->.classValue 
+
+other attribute based
+syntax
+[attribute='value']
+
+tagname[attr='attValue]
+
+username text field ->leaftaps
+using id
+"#username"
+"input#username"
+[id='username']
+input[id='username]
+input[name='USERNAME']
+
+using class
+.decorativeSubmit
+[class=decorativeSubmit]
+
+
+To search in Dom
+focus your control to dom -->click on the dom
+ctrl f -->search box
+
+
+
+
+
+
+
+
+
+
+Identify the element should be having stable value
+
+Preference to locate the element using attributes of that element
+id  ->first pref 
+name
+class
+text
+
+don'ts:
+when it has number /dynamic element
+attribute -->duplicated value
+ -->throw exception as strict mode violation
+
+To handle the Dropdown
+use selecOption
+  3 ways to click on the required selecOption
+  10 -->5
+  inputLogin -> 2match
+
+to pick on the index 
+locator. nth(4)  ->pick  ->zero index
+locator().first()/ last()
+
