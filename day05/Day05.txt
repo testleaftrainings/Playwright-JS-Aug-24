@@ -1,0 +1,64 @@
+Agenda:
+------
+9.00AM  to 9.30AM  -Fixtures
+9.30AM to 10.15AM  -Playwright Locators
+10.15AM to 10.30AM -Break
+10.30AM to 11.40AM -Assertion/Autowait
+11.40AM to 12.00AM -Classroom
+12.00AM to 12.45PM -Array
+12.45PM to 1.00PM  -Classroom
+
+
+Fixture : to write the global setup /tear down logics
+
+
+in-built -->page, context,browser
+custom fixture-->userdefined fixture -->login config
+
+
+Playwright Locators:
+
+element type
+
+getBylabel  -label based locator
+getByRole   -type of the element--button,link,checkbox,radio,
+getByText    -black text based locator
+getBytitle   -using title attribute
+getByPlaceholder -using placeholder attribute
+getByaltText  -using alt attribute
+getBytestId  -using testId attribute
+
+can be used to locate the element also with attributes -arial-label
+
+
+Assertions:
+---------
+  ->validating the output from received with expected result
+
+  Retrying Assertion
+    -->visible -->locating the tatrgeted element for timeout condition (if it not visible immediately)
+    -->30s
+    
+  Non -retrying assertions
+
+    Generic Assertion
+    Page Assertion      
+    Locator Assertion
+    API based Assertion
+    Screenshot assertion
+
+
+Hard Assertion  -->stops the execution when the validation fails
+syntax: await expect(page).toHaveTitle("Home | Salesforce")
+
+soft assertion  -->continue with exection and the exception will be collected a the end
+   await expect.soft(page).toHaveTitle("Home | Salesforce") 
+
+
+  Autowait -->ensures the element is behaving as expected by doing the actionability checks
+  visible
+  stable
+  Enabled
+  editable
+  Receive event ->overlay 
+
