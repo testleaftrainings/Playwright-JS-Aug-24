@@ -1,0 +1,84 @@
+Agenda:
+------
+9.00AM  to 9.40AM  -Arrays
+9.40AM to 10.00AM  -classroom
+10.00AM to 10.45AM -TypeScript Introduction
+10.45AM to 11.00AM -Break
+11.00AM to 12.00PM -Type annotations & Typescript alias 
+12.00PM to 12.15PM -Classroom
+12.15PM to 1.00PM  -Function Parameter & Type assertions
+
+
+Array --> special type of Obj which holds multiple values under single variable
+    -->dynamic memory 
+   -->increase or decrease the array ele
+
+let companyName="Testleaf"
+
+name, phnonumber, address 
+
+let emp="Harish",phno,"address"
+
+
+//webelement.allinnertext
+
+TypeScript
+ ---------
+   JS -->scripting language -->web designing
+      -->frontend & backend development 
+      -->dymanic  type check
+      -->prototype based -->OOPs concept
+      -->throw error at runtime
+
+      let user=""
+      user=124
+
+  TS -->super set of js 
+   static type check
+   compile time check
+ let user="" 
+ user=123 -not possible
+   -->class, object , interface
+
+   ts -->transpiled-->js -->run the code
+
+   compilation -->tsc filename.ts
+
+tsc --init  -->tsConfilg.ts -->configuration file
+
+
+ 
+ //global install
+ npm install -g typescript 
+
+ npm install --save-dev typescript
+
+tsc-->typescript compiler 
+
+type annotation -->infering the type of data
+
+-->Two types 
+
+type annotation
+  implicit inference
+  explicit inference
+ objectliterals
+   let variable={
+     key:value
+   }
+
+
+ type alias
+    type variable=string
+   union type 
+    type variable =string|number|boolean
+ intersection
+   type variable =string & boolean
+
+enum -->Enumeration -->user defined constants
+
+syntax
+
+enum enumName{
+
+}
