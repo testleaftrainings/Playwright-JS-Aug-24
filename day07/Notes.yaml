@@ -1,0 +1,122 @@
+Functional Parameters
+
+1. Optional parameters
+2. Default parameters
+
+Mandatory fields
+  - firstnmae
+  -lastname
+  -date of birth
+  -address
+  - phone num
+
+optional fields
+  - surname
+  - email
+  - address 2
+
+function userDetails()
+
+Default parameters
+
+userID:string?="5432"|undefined
+
+Frame
+
+class LoginPage() {
+  page:readonly
+
+  async userDetails()
+}
+
+
+Type Assertion
+1. Using as keyword
+2. Using angular brackets
+
+
+const response = await page.request.post("endpoint url", {
+data: {
+  name: 'Ajay',
+  age: 25
+}
+
+})
+
+let jsonResponse:any = await response.json();
+let successMessage = (jsonResonse as {message:string}).message
+log(successMessage)
+
+Dialog
+
+Playwright autodismisses the alerts (default)
+
+Types of Alert
+
+Modal Dialog
+    - it cannot be inspected
+1. Simple Alert
+      - Ok button
+      - accept the alert
+2. Confirm Alert
+      - Ok/Cancel
+      - accept the alert/dismiss the alert
+3. Prompt Alert
+      - Ok/Cancel
+      - Textbox
+      - accept the alert by entering the input/ dismiss the alert
+4. BeforeUnload Alert
+      - Leave/Cancel
+      - accept/dismiss the alert
+
+Non-modal dialogs
+Sweet Alert
+      - it is inspectable
+
+Methods
+
+1. accept("Testleaf") - to accpet the alert
+2. dismiss() - to dismiss the alert
+3. message() - to return the message displayed in the dialog
+4. type() - to return the type of the dialog
+5. defaultValue() - to return the default value from the text box of the prompt dialog (if applicable)
+
+if(dialog.type() === "prompt"){
+     dialog.accept("Testleaf")
+}
+    dialog.accept();
+
+Timeout
+
+1. global timeout  / timeout
+
+2. actionTimeout = 50000
+30s 
+.click({timeout: 50000})
+
+page.setDefault(50s)
+
+3. assertion timeout - expect
+
+
+2 min
+
+1 min 45s
+15s 
+50s
+
+const handleEvent = page.on('dialog', async dialog =>{
+     const dialogAccept = dialog.accept()
+})
+
+page.off('dialog', handleEvent)
+
+Frame
+iframe - inline frame
+<frameset>
+    <frame src="leaftaps.html">
+    <frame src="">
+</frameset>
+
+iframe
+<iframe src="youtube"
