@@ -1,0 +1,4 @@
+Your instance URL:https://dev74787.service-now.com
+
+Username: admin
+Current password: e$4QrQR2uVs+

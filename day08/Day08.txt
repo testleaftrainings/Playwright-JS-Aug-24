@@ -1,0 +1,55 @@
+Agenda:
+------
+9.00AM  to 10.00 AM - iFrames
+10.00AM to 10.20 AM - Classroom  
+10.20AM to 10.30 AM - Break
+10.30AM to 11.45 AM - Multiple Windows/tab
+11.45AM to 12.10 PM - Classroom
+12.10PM to 1.00 PM - File Upload
+1.00PM  to 1.15PM  - classroom
+
+
+frames() -->to get the all availbale frames in the page -->returns Array<frames>
+frames().length--> count of the frame
+
+Handling the frame:
+
+step:1 -->locate the frameElement 
+    use parent ele-->go with the tagname as iframe
+    use src /url of the frame element
+    use frame element attributes    
+
+
+step:2 -->locate the actual web element with the reference of frameElement
+
+frame 
+
+   page.frame({url:""})
+   page.frame("//iframe")
+frameLocator
+    page.frameLocator()
+-----------------------------
+
+Window Handling
+
+Context
+newPage() -->page1
+newPage() -->page2
+
+event listener -->sequential approach 
+have to listen the action before it is performed
+  -->listener for Window/page
+      creating a promise 
+  -->click on the element which triggeres an another event of opening a page/windoe
+     resolve the promise
+
+
+Promise.all -->concurent
+
+Upload 
+file type 
+  --In dom -->type =file -->use setInputFiles()
+event listener
+
+download 
+  event listener
