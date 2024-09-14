@@ -1,0 +1,87 @@
+Agenda:
+------
+9.00AM  to 10.00 AM - Data Parametrization-json/csv
+10.00AM to 10.20 AM - Classroom  
+10.20AM to 10.30 AM - Break
+10.30AM to 11.45 AM - Data Parametrization-env variables
+11.45AM to 12.10 PM - Skip Login/ storage state
+12.10PM to 12.45 PM - PersistentContext
+12.45PM  to 1.00PM  - classroom
+
+---------------------
+Data parametrization:
+-------------------
+json
+ ---
+  file with .json extention
+
+ const credentials={
+
+ }
+
+
+path--> ./
+  -->../-->testfolder
+  -->../-->control to the project
+  ../../-->under project -->choose any folder
+  ../../data-->data folder under project
+  ../../data/login.json
+
+
+ parent , "subfolder",filename
+
+
+  [
+    {
+    Key -value pair
+    "testcaseId":"TC001"
+    "username":"",
+    "password:""
+    },
+    {
+     "testcaseId:"TC002",
+     "username":"",
+     "password":""
+    }
+  ]
+
+  two ways
+   ------
+     forEach -->by converting the json into object array
+               -->static info
+        -->have to import the path of the json file
+
+     fs -->filestream -->convert the json into object 
+            -->dynamic
+
+csv -->comma separated value
+ -->file with .csv extention
+header 
+values
+        columns
+rows
+step:1
+csv install in node
+  npm install csv-parse
+
+
+TestcaseId,Username,password
+TC001,demoSalesManager,crmsfa
+Tc002,DemoCSR,crmsfa
+
+
+env 
+  ->file with .env extention
+  -->key =value 
+  prod.env
+  testing.env
+
+  install .env in node
+   npm install dotenv
+
+playwright default mode-->incognito mode
+
+
+
+
+persistentContext -->to normal mode 
