@@ -1,0 +1,75 @@
+Agenda:
+--------
+9.00AM to 9.15AM  - Recap
+9.15AM to 10.15AM -Playwright Test annotations
+10.15AM to 11.15AM -Hooks & Serial, Sequential and Parallel Execution 
+11.15AM to 11.30AM -classroom 
+11.30AM to 11.45AM - Break
+11.45AM to 12.10PM - Keyboard & Mouse Actions
+12.10PM to 12.30PM - Trace viewer/Screenshot
+12.30PM to 1.00PM -Codegen and commandline arguments
+
+
+Test annotations
+test.only -->only the specified test
+test.skip-->ignoring the testcase from execution-->reported in the report as skip
+test.fixme-->there is known failure with the script -->
+   test is in issue-->skip it
+test.slow--> it will slow the playwright execution triple of the amount of the timeout
+test.describe -->to group the testcases
+test.describe-->3 modes 
+            -->sequential -->one after the other execution
+            -->Serial -->inject dependenccy based on the status of the test1 , test2 will be executed
+                     -->if test1 fails -->test2 will be skipped
+            -->parallel
+                    to run the tests in parallel
+        test.describe.configure({mode:"serial",retries:1})
+
+    Tags -->to execute the test based on the category
+
+    test(``,{tag:"@smoke"},async()=>{})
+    npx playwright test --grep 'smoke'  -->only the tests with smoke tags will be executeds
+
+    npx playwright test learn --> text match with the test decription  will be executed        
+
+config file:
+// grep:/smoke/,
+    // testMatch:["readCSVdata.spec.ts",""],
+
+
+storagestate -->temp
+test annotations
+   
+   test.beforeAll  -->suite level -->executes once before all the test
+   test.beforeEach  -->test level-->executes for each test to be executed
+   test.afterEach   -->test level -->executes after each test to be executeds
+   test.afterAll    -->suite level -->executes after all the test 
+ 
+
+const page={
+    
+}
+
+{page} -->newContext(), newPage()
+
+loginFixture -->all the steps 
+
+  url
+  user
+  pwd
+  loginbutton
+  storagestate
+
+codgen --> record and playback
+custom fixture
+
+
+
+
+
+
+
+
+
+
+
