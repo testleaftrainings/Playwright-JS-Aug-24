@@ -1,0 +1,43 @@
+Agenda:
+--------
+9.00AM to 9.15AM   - Recap
+9.15AM to 10.15AM  - API Integration with Playwright(Post and Get)
+10.45AM to 11.05PM - Classroom
+11.05AM to 11.20AM - Break 
+11.20AM to 12.15PM - End to End Scenario
+12.15PM to 12.35PM - Classroom
+12.35PM to 1.00PM  - Keyboard and mouse actions
+
+
+browser
+browserContext -isolated window
+page -tab
+
+APIrequest  -->send all the HTTPS method(POST,GET,PATCH,DELETE)
+APIrequestContext-->associated with browserContext -->directly communicate with API server 
+                 -->share the cookies/storage state
+APIresponse-->response-->statuscode,url,ok, headers, assert,statustext
+
+
+Login to application -->use storage state -->directly to api server
+
+{browser}
+const context=browser.newContext()
+apiRequest:APIRequestContext=await context.request
+
+const page=context.newPage();
+apiRequest:APIRequestContext=page.request
+
+{request}
+
+For Post -->response -->json, code -201 created
+For Get -->response -->json, code 200 ok
+For Patch -->response -->noJson response -->204 No Content
+For Delete -->response -->noJson Response -->204 NoContent
+Fetching the deleted record -->Json -->No record found-->404
+
+
+
+
+
+
