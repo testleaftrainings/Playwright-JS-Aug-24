@@ -1,0 +1,112 @@
+Agenda:
+------
+9.00AM to 9.15AM   - Recap
+9.15AM to 10.00AM  -Introduction to OOPs & Classes & Object
+10.00AM to 10.45AM -Constructor& Accessmodifier
+10.45AM to 11.00AM - Break
+11.00AM to 11.45AM -Inheritance
+11.45AM to 12.00PM -Classroom
+12.00PM to 12.45PM -Polymorphism
+12.45PM to 1.00PM  -Classroom
+
+OOPs-->object oriented programming
+
+  -->modularity 
+  -->reusability
+  -->inherit
+  -->security -->Encapsulation
+  -->scalability
+
+Class -->template or blueprint -->common methods 
+    -->design which object can use
+ Object -->instance of the class -->reference to the class
+
+Create Lead, Create Account , create opp
+Data  -->credentials , leads ->name, company, phone
+Actions -->click, type
+
+Properties of the class
+ variableName:typeOfData ->info 
+
+ method -->no signature -->access modifier ,returntype,methodname
+ java --> void display(){}
+
+ syntax -ts
+    methodName(){}
+
+structure of the class:
+
+class className{
+
+   property:typeOF
+
+   method(){
+
+   }
+
+}
+
+let const 
+
+class createLead{
+    fname:locator
+    lname:boolean
+    cname:string
+
+    fillInfo(){
+        element.fill("fname")
+        element.fill("")
+    }
+
+
+}
+
+constructor ->special method to initialize the class property
+Access modifier -->scope of method/property -->between the classes
+3 types
+public -->scope is give to access by all other classes
+private -->only within the class
+protected-->can be given access within the class and also to the extende class
+
+
+Enscapsulation -->biding the data and methods together
+  -->private property/method
+
+give permission access to read / edit  by other classes
+ -->get -->to read the data /not be editable
+ -->set -->to edit the information
+
+ readonly -->like final variable , like immutable -->cant change the value of it
+
+To acces the protected property -->inheritance
+  inherit the property of  parent class
+   baseclass/parentclass/superclass -->childclass/derived class
+   extends keyword
+
+   super keyword -->calling the parent constructor
+
+  Types of Inheritance
+
+  single
+  Multi-level
+  hirerchial --> Login extends Browser 
+                 Home extends Login
+  hybrid -->single & Hirerchial
+
+Multiple Inheritance -not possible
+Home extends Login,Browser -->ambigutiy to use methods of different class
+
+Polymorphism --> many forms
+             overloading -->same class can same method with differt paramaters
+                fill(data:string);
+                fill(data:string,forceEnter?:boolean,isVisible?:string);
+
+    single implementation
+
+  if(forceEnter){
+    fill(data:string,forceEnter?:boolean);
+
+  }else{
+      fill(data:string);
+  }
+             overriding  ->same methodName, same argument -->different classes
