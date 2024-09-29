@@ -1,0 +1,98 @@
+
+Agenda:
+------
+9.00AM  to 10.00AM - Recap & Static 
+10.00AM to 11.00AM - Abstraction
+11.00AM to 11.15AM - Classroom
+11.15AM to 11.30AM - Break
+11.35AM to 12.30PM - PageObjectModel
+12.30PM to 1.00PM  - Classroom
+
+keyword 
+ this -->currect class object
+ super -->parent class object
+ readonly-->makes the property as final/cnstant
+ static -->single reference -->class reference
+        --no need of object
+
+
+Abstraction 
+-----------
+  Hiding the internal details and showing the necessary information
+
+abstract class -->0 to 100% -->i can have logic as well as hide the logic
+  partial abstraction
+ 
+interface -100% of abstraction
+  full abstraction
+
+ design the utility /resuable function
+  template either with / with out logic
+
+
+To access the abstract class methods in Concrete class(Normal Class)
+extends  -->build relationship -->is-a
+
+interface -->having only abstract method(No logic)
+methodname():returnType;
+
+when to use extends and implements
+
+same type of class can extend
+always class implements interface
+       class extends abstract class
+
+interface to interface -->extends
+interface extends another interface
+abstract class extends another abstract class
+class extends abstract class
+class implements interface1, interface2
+
+class extends abstracts implements interface
+
+
+PageObjectModel -design pattern
+ -->Modularity
+ -->resusabilty
+ -->scalability
+ -->Increased Productivity
+
+segerate the page specific object from testcase
+page specfic -->WebEle and actions separately -->individual class based on the app flow 
+  methods&Property
+testcase --sepearately
+
+class classname{
+
+}
+
+
+class classname extends parentClass{
+
+}
+
+POM structure:
+
+step:1 -->Add a new folder and initialize the playwright and make chnages to config file as per need
+
+step:2 -->Create folder as pages which hold files for different navigations -->specfic class  in each file
+
+step:3 -->create testcases based on the test flow
+
+step:4 -->create utils folder if any wrapper methods to be added
+
+step:5 -->create data folder to have test data
+
+Pre requisite to use test data
+csv ->npm install csv-parse
+xlsx-->npm install xlsx
+faker --> npm install @faker-js/faker
+
+
+
+
+
+
+
+
+
