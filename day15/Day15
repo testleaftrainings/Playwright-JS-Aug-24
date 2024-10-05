@@ -1,0 +1,54 @@
+
+Agenda:
+------
+9.00AM  to 9.15AM  - Recap
+9.15AM  to 9.45AM  - POM with Custom Fixture
+9.45AM to 10.10AM  - Classroom
+10.10AM to 11.00AM - Custom Retry and Custom Report
+11.00AM to 11.15AM - Break
+11.15AM to 12.15AM - Jira Integration
+12.15AM to 12.30PM - Classroom
+12.30PM to 1.00PM  - Framework walk through
+
+
+Login WelcomePage HomePage LeadsPage CreateLeadPage
+                                     MergeLeads
+                                     AccountPage -methods
+
+Salesforce -Leads, Opportunity, Accounts, Chatter
+C-->R-->U-->D
+
+
+npx playwright test -->all spec.ts files
+
+npx playwright test TC001 
+
+
+pages -->login and HomePage
+fixture -->Login and Home
+<test-->call the fixture along with page specfic method
+
+custom retry -->logic to be excuted when i do retry
+
+
+Framework 
+wrapper methods -->abstract methods
+ pom
+ retry
+ customfixture
+ api Integration 
+
+ testdata -->json,csv,env,excel
+ modules-->parametrize  -->pomConfig
+ assertions-->validation
+
+ Configuration 
+  Allure Report
+  Jira
+  API 
+  Data Utilty -reusable -read/write the data
+  Data-->physical files
+  pages ->page specific classes
+  fixtures -->page Specici fixture
+  test-->execution
+  custom report
