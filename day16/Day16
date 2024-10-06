@@ -1,0 +1,104 @@
+Today's Agenda
+--------------
+9.00AM to 9.15AM   -Recap
+9.15AM to 10.15AM  -Jira Integration
+10.15AM to 10.30AM -Break
+10.30AM to 11.10AM -GeoLocation
+11.10AM to 11.50AM -DeviceEmulation
+11.50AM to 12.20PM -Network interception
+12.20PM to 12.40PM -Visual testing
+12.40PM to 1.10PM  -Github actions -CI
+
+
+
+axios -->node js library 
+
+jira-client
+
+endpoint
+resource
+post -->payload (body)
+authorization
+
+Endpoint: //domainname/api/2/resource
+https://vidya-bharathi.atlassian.net/api/2/resource
+
+Basic Auth
+username -->vidyar1926@gmail.com
+password -->apikey
+ Profile -->manageaccounts -->security -->API tokens -->create the token and store in notepad
+project key
+
+ATATT3xFfGF0BRwQBFN7LbZrHRuevB25tmeKYngfwWeqJqsejTX6chRU0mYI8dkxE57aHlhNBXHV7hzTAHcqaOyi3h937D1SQOMQW-sK9fZVRnWYTt9vsTBAVj8VTco5QcPe0bgdk-PtKUos6KFO_OGgBRQ1nhAjvYjVR_wxSxhnCpSdZRQBogo=55669227
+
+
+Global level, 
+{use
+{geolocation:{
+  'latitude':39.0742,
+  'longitude':21.8243
+},
+permissions:['geolocation']}
+
+
+}
+Project Level,
+{use
+{geolocation:{
+  'latitude':39.0742,
+  'longitude':21.8243
+},
+permissions:['geolocation']}
+
+
+}
+ Test level 
+newContext(
+{geolocation:{
+  'latitude':39.0742,
+  'longitude':21.8243
+},
+permissions:['geolocation']})
+
+test.use({use
+{geolocation:{
+  'latitude':39.0742,
+  'longitude':21.8243
+},
+permissions:['geolocation']}
+})
+test()
+
+network interception
+
+Mock api
+Test the behaviour when the server is down
+Block the images/ to check with specific issues -->better performance
+Modify the request
+
+
+Github action 
+
+Source icon -->Initialiaze -->option to choose the repo
+Commit -->message-->Publish branch
+
+Terminal commands
+
+
+git config username
+git config email
+git init -->initialize the local repo  -done once
+for every changes with the repo
+git add .-->staging 
+git commit -->it is manadatory 
+git remote add "url" --  done once
+git push 
+
+remote repo-->actions-->test-->Execution status
+
+npm i -D allure-playwright
+npm install -g allure-commandline
+allure generate ./allure-results -o ./MyReports
+allure open ./MyReports
+
+xvfb-run npx playwright test  -->headless mode -->configure in yml
